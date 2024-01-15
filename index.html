@@ -6,24 +6,40 @@
     <link rel="stylesheet" href="css/style.css">
     <title>katik persegi</title>
     <script src="/8-jan-24-qaiszr/js/index.js"></script>
+
 </head>
 <body>
-    <header>
+    <header id="header">
         <h1>KATIK kalkulator matematik</h1>
         <h4>Welcome to KATIK</h4>
         <P>Web untuk menghitung luas dan keliling persegi dalam rangka Project ReVou</P>
     </header>
 
+    <div id="body">
+    <h1>HITUNG HASIL DARI LUAS DAN KELILING PERSEGI</h1>
+    <h5>selamat mengerjakan</h5>
+    </div>
+
+
     <div class="inputsection">
         <label for="squareside" id="lblsquareside">hitung luas persegi</label>
-        <input type="number" id="squareside" oninput="luas(), kel()">
+        <input type="number" id="squareside">
     </div>
+
     <div class="buttons">
-        <button id="countbutton">hitung</button>
+        <button id="countbutton">hitung </button>
         <button id="resetbutton">Reset</button>
     </div>
 
+
+    <p>masukan sisi persegi <input type="number" id="s" oninput="luas(), kel()"></p>
+    <p>-----------------------------------------------------</p>
+
     <p>luas persegi adalah = <span id="luas"></span></p>
     <p>keliling persegi adalah = <span id="kel"></span></p>
+    
+
+
+
 </body>
 </html>
