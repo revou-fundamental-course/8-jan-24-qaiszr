@@ -1,15 +1,16 @@
-function luas(){
-    var s = document.getElementById('s').value;
+function calculate() {
+    var sideLength = document.getElementById("sideLength").value;
+    sideLength = parseFloat(sideLength);
 
-    var luas = s*s;
-    
-    document.getElementById('luas').innerHTML = luas;
-}
+    var perimeter = 4 * sideLength;
+    var area = sideLength * sideLength;
 
-function kel(){
-    var s = document.getElementById('s').value;
+    var resultText = "Keliling: " + perimeter + "<br>Luas: " + area;
+    document.getElementById("result").innerHTML = resultText;
+  }
 
-    var kel = 4*s;
-    
-    document.getElementById('kel').innerHTML = kel;
-}
+
+  function resetForm() {
+    document.getElementById("sideLength").value = "";
+    document.getElementById("result").innerHTML = "";
+  }

@@ -16,30 +16,35 @@
     </header>
 
     <div id="body">
-    <h1>HITUNG HASIL DARI LUAS DAN KELILING PERSEGI</h1>
-    <h5>selamat mengerjakan</h5>
+        <h1>HITUNG HASIL DARI LUAS DAN KELILING PERSEGI</h1>
+        <h5>selamat mengerjakan</h5>
     </div>
 
-
-    <div class="inputsection">
-        <label for="squareside" id="lblsquareside">hitung luas persegi</label>
-        <input type="number" id="squareside">
+    <div class="container">
+        <img src="./luas dan keliling persegi 2.png" alt="">
+        <br>
+        <P>Rumus luas dan keliling persegi yaitu:</P>
+        <div class="text">
+            <h4>L= S x S</h4>
+            <h4>K= 4 x S</h4>
+        </div>
     </div>
 
-    <div class="buttons">
-        <button id="countbutton">hitung </button>
-        <button id="resetbutton">Reset</button>
+        <P>Di mana :</P>
+        <p>L = Luas</p>
+        <p>K = Keliling</p>
+
+    <div class="border">
+        <label for="sideLength">HITUNG LUAS DAN KELILING PERSEGI:</label><br>
+        <input type="number" id="sideLength" placeholder="Nilai sisi">
+      
+        <br>
+      
+        <button onclick="calculate()">Hitung</button>
+        <button onclick="resetForm()">Reset</button>
+      
+        <div id="result"></div>
     </div>
-
-
-    <p>masukan sisi persegi <input type="number" id="s" oninput="luas(), kel()"></p>
-    <p>-----------------------------------------------------</p>
-
-    <p>luas persegi adalah = <span id="luas"></span></p>
-    <p>keliling persegi adalah = <span id="kel"></span></p>
-    
-
-
 
 </body>
 </html>
