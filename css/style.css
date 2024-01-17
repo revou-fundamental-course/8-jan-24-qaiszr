@@ -11,8 +11,6 @@ header{
     text-align: center;
 }
 
-/* Ini adalah komentar di CSS */
-
 #header {
     align-items: center;
     justify-content: space-between;
@@ -51,7 +49,7 @@ header{
 }
 
 .border input{
-  width: 25%;
+  width:  100%;
   margin: 10px 0px;
   border: 2px solid #ff0000;
   border-radius: 5px;
@@ -66,4 +64,9 @@ header{
   border: 2px solid #1589f5;
   border-radius: 5px;
   padding: 10px 0px;
+}
+
+.border #result{
+  text-align: left;
+
 }

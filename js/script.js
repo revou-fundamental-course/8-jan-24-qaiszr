@@ -9,8 +9,6 @@ function calculate() {
     document.getElementById("result").innerHTML = resultText;
   }
 
-// Fungsi untuk menyapa pengguna
-
   function resetForm() {
     document.getElementById("sideLength").value = "";
     document.getElementById("result").innerHTML = "";
